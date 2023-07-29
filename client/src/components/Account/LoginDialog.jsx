@@ -96,13 +96,14 @@ const LoginDialog = () => {
                 <Box style={{position:'relative'}}>
                     <QRCOde src={qrCodeImage} alt="QR Code" />
                     <Box style={{position: 'absolute', top: '50%', transform: 'translateX(25%) translateY(-25%)'}}>
-                         showloginButton ?
+                         {showloginButton ?
                             <GoogleLogin
                                 buttonText=""
                                 onSuccess={onLoginSuccess}
                                 onError={onLoginFailure}
                             /> 
                             : null
+                        }
                     </Box>
                 </Box>
             </Component>
