@@ -88,13 +88,13 @@ const LoginDialog = () => {
                 <Container>
                     <Title>To use WhatsApp on your computer:</Title>
                     <StyledList>
-                        <ListItem>1. Open WhatsApp on your phone</ListItem>
-                        <ListItem>2. Tap Menu Settings and select WhatsApp Web</ListItem>
-                        <ListItem>3. Point your phone to this screen to capture the code</ListItem>
+                        <ListItem>1. This is a Whatsapp clone.</ListItem>
+                        <ListItem>2. Sign in with your google account. </ListItem>
+                        <ListItem>3. Chat with your friends. </ListItem>
                     </StyledList>
                 </Container>
                 <Box style={{position:'relative'}}>
-                    <QRCOde src={qrCodeImage} alt="QR Code" />
+                    {/* <QRCOde src={qrCodeImage} alt="QR Code" /> */}
                     <Box style={{position: 'absolute', top: '50%', transform: 'translateX(25%) translateY(-25%)'}}>
                          {showloginButton ?
                             <GoogleLogin
